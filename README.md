@@ -15,6 +15,7 @@ This website is the homepage of Vorper and also is used as a way to display what
 Contributions are heavily supported by us and we accept most contributions. Learn more on how to contribute via the CONTRIBUTING.md (still in development)
 
 ## Quick Setup
+
 1. `git clone https://github.com/Vorper-Team/Vorper.git` to clone the repo
 2. `yarn install` to install dependencies
 3. `yarn start` to start the development server
