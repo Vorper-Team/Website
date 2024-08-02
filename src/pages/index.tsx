@@ -19,9 +19,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="/docs"
           >
-            Docusaurus Tutorial - 5min ⏱️
+            Get Started
           </Link>
         </div>
       </div>
@@ -30,16 +30,19 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`A community of open-source developers`}
+      description="Vorper is a team of developers from all around the world with a unified goal: to make FOSS better."
     >
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <h1 className={styles.mainHeading}>
+        This site is under heavy development and WILL not be indexed by search engines as of now, the site you are viewing right now is just the latest testing deployment
+      </h1>
       </main>
     </Layout>
   );
 }
+
+// Place <HomepageFeatures></HomepageFeatures> in <main> later

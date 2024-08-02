@@ -21,3 +21,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.mainHeading {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}

@@ -10,14 +10,27 @@ const config: Config = {
   favicon: "img/favicon.ico",
   url: "https://www.vorper.com",
   baseUrl: "/",
+  noIndex: true, // Disabled Indexing for now.
 
   // Website Deployment
   organizationName: "Vorper-Team",
   projectName: "Vorper",
   deploymentBranch: "deployment",
+
+  // Preferences
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
+  titleDelimiter: '-',
+    headTags: [
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          href: '/img/docusaurus.png',
+        },
+      },
+    ],
 
   i18n: {
     defaultLocale: "en",
@@ -29,6 +42,7 @@ const config: Config = {
       "classic",
       {
         docs: {
+          breadcrumbs: true,
           sidebarPath: "./sidebars.ts",
           editUrl: "https://github.com/Vorper-Team/Vorper/tree/main/website/",
         },
@@ -44,12 +58,17 @@ const config: Config = {
   ],
 
   themeConfig: {
+    metadata: [
+      {name: 'theme-color', content: '#5f52bf'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:image:src', content:'/img/vorper-card.png'}
+    ],
     image: "img/vorper-card.png",
     navbar: {
+      title: "Vorper",
       logo: {
         alt: "Vorper Logo",
-        src: "img/logo_light.svg",
-        srcDark: "img/logo_dark.svg",
+        src: "img/logo.svg",
       },
       items: [
         {
@@ -67,6 +86,8 @@ const config: Config = {
         },
       ],
     },
+
+
     footer: {
       links: [
         {
@@ -106,9 +127,11 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Vorper`,
     },
+
+
     prism: {
-      theme: prismThemes.nightOwlLight,
-      darkTheme: prismThemes.nightOwl,
+      theme: prismThemes.jettwaveLight,
+      darkTheme: prismThemes.jettwaveDark,
     },
   } satisfies Preset.ThemeConfig,
 };

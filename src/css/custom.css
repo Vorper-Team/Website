@@ -1,30 +1,106 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url("https://rsms.me/inter/inter.css");
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-size-base: 1.15rem;
+  --ifm-font-family-base: "Inter", sans-serif;
+  --ifm-color-primary: #00609c;
+  --ifm-color-primary-dark: #4180b4;
+  --ifm-color-primary-darker: #005983;
+  --ifm-color-primary-darkest: #124981;
+  --ifm-color-primary-light: #3b6aba;
+  --ifm-color-primary-lighter: #4f7aca;
+  --ifm-color-primary-lightest: #5db3c4;
+  --ifm-background-color: var(--ifm-color-gray-0);
+  --ifm-navbar-background-color: var(--ifm-background-color);
+  --ifm-footer-background-color: rgb(226, 226, 226);
+  --ifm-pre-padding: 1.5rem;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+@supports not (font-variation-settings: normal) {
+  :root {
+    --ifm-font-family-base: "Inter", sans-serif;
+  }
+}
+
+html[data-theme="dark"] {
+  --ifm-color-primary: #7ccbff;
+  --ifm-background-color: black;
+  --ifm-footer-background-color: rgb(29, 29, 29);
+}
+
+.navbar {
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.navbar__title {
+  font-size: 1.4rem;
+}
+
+.navbar__logo {
+  height: 37px;
+}
+
+
+.navbar__inner {
+  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+  backdrop-filter: blur(3px);
+  background-color: rgba(226, 231, 230, 0.811);
+}
+
+[data-theme="dark"] .navbar__inner {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.markdown h1 {
+  font-weight: 900;
+}
+
+.markdown h2, .markdown h3 {
+  font-weight: 800;
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --ifm-font-size-base: 1.2rem;
+    --ifm-line-height-base: 1.8;
+  }
+
+  body {
+    font-size: 1.2rem;
+  }
+
+  .markdown h1 {
+    font-size: 2.7rem;
+  }
+
+  .markdown h2 {
+    font-size: 2rem;
+  }
+
+  .markdown h3 {
+    font-size: 1.5rem;
+  }
+
+  .markdown p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(101, 158, 173);
+  border-radius: 10px;
+  border: 3.5px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
 }
