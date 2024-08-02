@@ -1,41 +1,27 @@
-# Website
+![vorper](https://github.com/user-attachments/assets/6981e1c0-7aab-49d4-99ce-f394917a576b)
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+<p align="center">
+  $\Huge{\textsf{A Vorper Project}}$
+</p>
 
-### Installation
+<a href= "https://github.com/prettier/prettier"><img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg"></a>
 
-```
-$ yarn
-```
+## Contributing
 
-### Local Development
+Contributions are heavily supported by us and we accept most contributions. Learn more on how to contribute via the CONTRIBUTING.md (still in development)
 
-```
-$ yarn start
-```
+## Quick Setup
+1. `git clone https://github.com/Vorper-Team/Vorper.git` to clone the repo
+2. `yarn install` to install dependencies
+3. `yarn start` to start the development server
+4. `yarn build` to compile the source code into a static site
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Attribution
 
-### Build
+We used the following awesome tools and frameworks to build this site:
 
-```
-$ yarn build
-```
+[Docusaurus](https://docusaurus.io): A static site generator focused on making it easy to focus on your content
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+[Inter Font](https://rsms.me/inter/): A great sans-serif font built for legibility over quirkiness
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+[Prettier](https://prettier.io/): An opinionated code formatter
