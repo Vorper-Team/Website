@@ -58,6 +58,15 @@ const config: Config = {
   ],
 
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
+    colorMode: {
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     metadata: [
       { name: "theme-color", content: "#5f52bf" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -76,6 +85,7 @@ const config: Config = {
           sidebarId: "documentationSidebar",
           position: "left",
           label: "Docs",
+          
         },
         { to: "/blog", label: "Blog", position: "left" },
         { to: "https://example.com", label: "Team", position: "left" },
@@ -119,7 +129,7 @@ const config: Config = {
             },
             {
               label: "Branding",
-              href: "https://example.com",
+              href: "/brand",
             },
           ],
         },

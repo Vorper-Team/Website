@@ -1,0 +1,61 @@
+---
+title: Branding
+description: We have a couple of rules you need to follow when mentioning us in your projects, here's everything you need to know.
+hide_table_of_contents: false
+keywords:
+  - Vorper Branding
+  - Branding
+  - Logos
+  - Logomark
+---
+
+# Brand Assets
+
+Ever wanted to mention us in any of your pages but never knew how to? Well this page is just for you! Read the following texts and images provided and you'll be good to go when mentioning us 
+using our branding.
+
+
+## Downloads
+
+Here are the downloads to all our brand assets and content you'll need to mention us, most of these are SVGs and not PNGs.
+
+[Logomark with Name (Dark Mode)](/img/logo_dark.svg)
+
+[Logomark with Name (Light Mode)](/img/logo_light.svg)
+
+[Logomark (Dark & Light Mode)](/img/logo.svg)
+
+[Banner (Dark & Light Mode)](/img/vorper-card.png)
+
+
+## Do's and Dont's
+
+:::info
+If you have violated any of these policies by accident you can either modify it to be compliant or email us for permission to use our branding with the violated policies.
+:::
+
+Here are some do's and dont's to follow when using any of our branding in your software, please read the following passages carefully.
+
+### Do this
+
+* Mentioning by name
+    * When you mention our organization's name, you should always use the spelling "Vorper" and not "vorper"
+    <br></br>
+* Attribution
+    * If you have used any of our code in your projects and want to thank us, you should either leave a link to our page in a reasonable place or place our [banner](#do-this) somewhere on your page.
+    <br></br>
+* Citation
+    * Want to cite any of our educational articles? Well you can, just follow this format:
+
+```html
+<a href="linkToArticle" about="_blank">articleName - Vorper</a>
+```
+
+### Don't do this
+
+* Ownership
+    * Don't use our brand image in any way that can indicate you are affiliated with or own Vorper.
+    <br></br>
+* Modification
+    * Don't change the color pallete and don't add things to our logos when mentioning us.
+    <br></br>

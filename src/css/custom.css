@@ -45,24 +45,30 @@ html[data-theme="dark"] {
 .navbar__inner {
   padding: var(--ifm-navbar-padding-vertical)
     var(--ifm-navbar-padding-horizontal);
-  backdrop-filter: blur(3px);
-  background-color: rgba(226, 231, 230, 0.811);
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.632);
 }
 
 [data-theme="dark"] .navbar__inner {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
-.markdown h1 {
+h1 {
+  font-size: 2.3rem;
   font-weight: 900;
 }
 
-.markdown h2,
-.markdown h3 {
+h2,
+h3 {
+  font-size: 1.7rem;
   font-weight: 800;
 }
 
-@media (min-width: 1280px) {
+p {
+  font-size: 1.15rem;
+}
+
+@media (min-width: 1024px) {
   :root {
     --ifm-font-size-base: 1.2rem;
     --ifm-line-height-base: 1.8;
@@ -70,23 +76,6 @@ html[data-theme="dark"] {
 
   body {
     font-size: 1.2rem;
-  }
-
-  .markdown h1 {
-    font-size: 2.7rem;
-  }
-
-  .markdown h2 {
-    font-size: 2rem;
-  }
-
-  .markdown h3 {
-    font-size: 1.5rem;
-  }
-
-  .markdown p {
-    font-size: 1.2rem;
-    line-height: 1.7;
   }
 }
 
@@ -97,7 +86,8 @@ html[data-theme="dark"] {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(101, 158, 173);
   border-radius: 10px;
-  border: 3.5px solid transparent;
+  border: 2px solid transparent;
+  height: 1px;
   background-clip: content-box;
 }
 
@@ -105,3 +95,13 @@ html[data-theme="dark"] {
   background: transparent;
   border-radius: 10px;
 }
+
+li {
+  font-size: 1.2rem;
+}
+
+.table-of-contents__link {
+  font-size: 0.9rem;
+}
+
+/* CSS Code is extremely redundant and needs a refactoring. I need some serious assistance - PH7NTOM */

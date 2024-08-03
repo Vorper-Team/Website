@@ -2,7 +2,6 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
@@ -15,7 +14,7 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p></p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs">
             Get Started
@@ -29,8 +28,8 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   return (
     <Layout
-      title={`A community of open-source developers`}
-      description="Vorper is a team of developers from all around the world with a unified goal: to make FOSS better."
+      title={`Homepage`}
+      description="Vorper is a team of developers from all around the world with a unified goal: to make FOSS better for everyone."
     >
       <HomepageHeader />
       <main>
@@ -43,5 +42,3 @@ export default function Home(): JSX.Element {
     </Layout>
   );
 }
-
-// Place <HomepageFeatures></HomepageFeatures> in <main> later
