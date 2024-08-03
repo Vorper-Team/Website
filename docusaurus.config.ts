@@ -62,11 +62,11 @@ const config: Config = {
         docs: {
           breadcrumbs: true,
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/Vorper-Team/Vorper/tree/main/website/",
+          editUrl: "https://github.com/Vorper-Team/Vorper/tree/main/",
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/Vorper-Team/Vorper/tree/main/website/",
+          editUrl: "https://github.com/Vorper-Team/Vorper/tree/main/",
         },
         theme: {
           customCss: "./src/css/custom.css",
