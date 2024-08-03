@@ -1,24 +1,27 @@
 ---
-slug: hello-vorper
-title: Hello Vorper
+slug: /vorper-release
+title: Announcing Vorper
 authors:
   - ph7ntom
-tags: [test]
-description: A test post
+  - norlion
+tags: [Development]
+description: We've just released Vorper's brand new homepage and it's looking great!
 hide_table_of_contents: false
-image: /img/vorper-card.png
+keywords: [web development, vorper homepage, first blog]
 ---
 
-Hiii uwu
+We've just finished building Vorper's official homepage and it's looking great, however we still have a lot to tell about how the journey went.
 
 <!-- truncate -->
 
-Ex duis tempor do deserunt nostrud aliquip. Cillum est voluptate ut nulla dolor laborum do irure ipsum magna occaecat. Enim est ea eiusmod qui ad elit labore excepteur occaecat adipisicing quis irure nostrud fugiat. Nisi magna mollit officia nostrud velit aliqua et voluptate dolore eu. Proident et fugiat sunt voluptate tempor consequat incididunt. Laboris dolor anim dolore reprehenderit fugiat culpa et magna excepteur commodo velit culpa cupidatat ex. Labore consectetur nostrud nostrud tempor non incididunt sit labore consequat velit est do officia aute.
+## Starting Off
 
-Mollit est incididunt ex officia labore cillum consectetur ad do anim eu culpa tempor. Enim anim voluptate ad eu. Occaecat Lorem sunt nostrud in ea duis officia occaecat reprehenderit sunt et velit occaecat elit. Veniam tempor cupidatat incididunt esse eu exercitation nostrud dolor cillum quis qui minim duis ut. Consequat excepteur nulla voluptate duis. Commodo laboris pariatur quis sunt amet sit duis labore. Anim aliqua quis veniam non ad ex Lorem minim.
+:::danger
+This blog is still undergoing development. Please remain patient for the time being.
+:::
 
-Est cillum nisi fugiat mollit ullamco dolore duis veniam excepteur. Irure in eu fugiat velit sit qui consectetur aliqua aliqua mollit. Qui cupidatat minim veniam dolore commodo velit.
+Starting off, we used Docusaurus as a base for everything we needed, wonder why we picked Docusaurus instead of building our own from scratch, well there's something called "time" and we don't have much of it. Instead of wasting time building an entire site by ourselves, we just let Docusaurus do the heavy work.
 
-In Lorem laboris commodo aute magna labore enim mollit ea Lorem tempor. Ex magna magna esse quis sunt. Est sint commodo esse mollit quis deserunt. In reprehenderit dolore excepteur magna veniam dolore mollit laboris esse incididunt nostrud. Veniam velit ex minim velit excepteur occaecat laboris et et mollit sunt dolore. Sit ex commodo qui cupidatat. Proident consectetur excepteur ullamco velit elit tempor fugiat sint id laboris.
+## Integrating with GitHub
 
-Ullamco pariatur aliqua in irure velit amet consequat quis pariatur velit. Dolore sunt nostrud sit reprehenderit quis ea laborum sunt. Mollit est esse et incididunt labore magna. Laborum officia est anim consectetur anim nulla eiusmod nostrud dolor et duis anim esse.
+Once we had finished setting up our repository for the site and added some articles and blogs, we decided we wanted to make the deployment process 10x easier by automating deployment. How did we do this you may ask, well there's a thing called GitHub actions and it's pretty neat, it lets us setup a script on what to do when there is a commit. What we did was make it so that whenever there is a commit, it will automatically build the website's files and deploy to github pages, Woohoo! for ease of use.

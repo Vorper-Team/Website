@@ -10,7 +10,6 @@ const config: Config = {
   favicon: "img/favicon.ico",
   url: "https://www.vorper.com",
   baseUrl: "/",
-  noIndex: true, // Disabled Indexing for now.
 
   // Website Deployment
   organizationName: "Vorper-Team",
@@ -41,6 +40,25 @@ const config: Config = {
     [
       "classic",
       {
+        gtag: {
+          trackingID: "G-LDPSDB49S1",
+          anonymizeIP: false,
+        },
+        googleTagManager: {
+          containerId: "GTM-MDXQMNWG",
+        },
+        sitemap: {
+          lastmod: "date",
+          changefreq: "weekly",
+          priority: 0.5,
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
+          createSitemapItems: async (params) => {
+            const { defaultCreateSitemapItems, ...rest } = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes("/page/"));
+          },
+        },
         docs: {
           breadcrumbs: true,
           sidebarPath: "./sidebars.ts",
@@ -85,10 +103,9 @@ const config: Config = {
           sidebarId: "documentationSidebar",
           position: "left",
           label: "Docs",
-          
         },
         { to: "/blog", label: "Blog", position: "left" },
-        { to: "https://example.com", label: "Team", position: "left" },
+        { to: "/team", label: "Team", position: "left" },
         {
           href: "https://github.com/vorper-team/vorper",
           label: "GitHub",

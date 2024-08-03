@@ -1,7 +1,7 @@
 @import url("https://rsms.me/inter/inter.css");
 
 :root {
-  --ifm-font-size-base: 1.15rem;
+  --ifm-font-size-base: 1.2rem;
   --ifm-font-family-base: "Inter", sans-serif;
   --ifm-color-primary: #00609c;
   --ifm-color-primary-dark: #4180b4;
@@ -45,7 +45,7 @@ html[data-theme="dark"] {
 .navbar__inner {
   padding: var(--ifm-navbar-padding-vertical)
     var(--ifm-navbar-padding-horizontal);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.632);
 }
 
@@ -54,27 +54,39 @@ html[data-theme="dark"] {
 }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: 900;
 }
 
 h2,
 h3 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 
-p {
-  font-size: 1.15rem;
+.pagination-nav__label {
+  font-size: 0.8rem;
+}
+
+li {
+  font-size: 1.05rem;
 }
 
 @media (min-width: 1024px) {
   :root {
-    --ifm-font-size-base: 1.2rem;
+    --ifm-font-size-base: 1.25rem;
     --ifm-line-height-base: 1.8;
   }
 
+  li {
+    font-size: 1.2rem;
+  }
+
   body {
+    font-size: 1.2rem;
+  }
+
+  .pagination-nav__label {
     font-size: 1.2rem;
   }
 }
@@ -86,18 +98,13 @@ p {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(101, 158, 173);
   border-radius: 10px;
-  border: 2px solid transparent;
-  height: 1px;
+  border: 3.35px solid transparent;
   background-clip: content-box;
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 10px;
-}
-
-li {
-  font-size: 1.2rem;
 }
 
 .table-of-contents__link {

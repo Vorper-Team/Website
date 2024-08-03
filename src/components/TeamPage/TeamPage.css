@@ -1,0 +1,108 @@
+:root {
+  --card-background-light: #fff;
+  --card-background-dark: #141414;
+  --text-light: #484848;
+  --text-dark: #c0cbdb;
+  --description-light: #666e7a;
+  --description-dark: #808c9d;
+}
+
+[data-theme="dark"] {
+  --card-background-light: var(--card-background-dark);
+  --text-light: var(--text-dark);
+  --description-light: var(--description-dark);
+}
+
+.team-page {
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.team-title {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  color: var(--text-light);
+}
+
+.team-title .gradient-text {
+  background: linear-gradient(to right, #ae86ff, #657cff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.team-description {
+  font-size: 1.6rem;
+  color: var(--description-light);
+  font-weight: 500;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.team-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.team-card {
+  background: var(--card-background-light);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: left;
+  max-width: 20rem;
+}
+
+.team-icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-member-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: var(--text-light);
+}
+
+.team-role {
+  color: var(--description-light);
+  margin-bottom: 1rem;
+}
+
+.team-about {
+  font-size: 1.2rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .team-page {
+    padding: 3rem 0rem;
+  }
+
+  .team-title {
+    font-size: 2.2rem;
+    padding: 0 1rem;
+  }
+
+  .team-description {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .team-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card {
+    max-width: 90%;
+  }
+}
