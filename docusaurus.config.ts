@@ -21,16 +21,16 @@ const config: Config = {
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  titleDelimiter: '-',
-    headTags: [
-      {
-        tagName: 'link',
-        attributes: {
-          rel: 'icon',
-          href: '/img/docusaurus.png',
-        },
+  titleDelimiter: "-",
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        href: "/img/docusaurus.png",
       },
-    ],
+    },
+  ],
 
   i18n: {
     defaultLocale: "en",
@@ -59,9 +59,9 @@ const config: Config = {
 
   themeConfig: {
     metadata: [
-      {name: 'theme-color', content: '#5f52bf'},
-      {name: 'twitter:card', content: 'summary_large_image'},
-      {name: 'twitter:image:src', content:'/img/vorper-card.png'}
+      { name: "theme-color", content: "#5f52bf" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image:src", content: "/img/vorper-card.png" },
     ],
     image: "img/vorper-card.png",
     navbar: {
@@ -86,7 +86,6 @@ const config: Config = {
         },
       ],
     },
-
 
     footer: {
       links: [
@@ -127,7 +126,6 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Vorper`,
     },
-
 
     prism: {
       theme: prismThemes.jettwaveLight,

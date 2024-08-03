@@ -42,9 +42,9 @@ html[data-theme="dark"] {
   height: 37px;
 }
 
-
 .navbar__inner {
-  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+  padding: var(--ifm-navbar-padding-vertical)
+    var(--ifm-navbar-padding-horizontal);
   backdrop-filter: blur(3px);
   background-color: rgba(226, 231, 230, 0.811);
 }
@@ -57,7 +57,8 @@ html[data-theme="dark"] {
   font-weight: 900;
 }
 
-.markdown h2, .markdown h3 {
+.markdown h2,
+.markdown h3 {
   font-weight: 800;
 }
 
