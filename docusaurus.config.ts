@@ -78,7 +78,7 @@ const config: Config = {
           label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
-        { to: "/team", label: "Team", position: "left" },
+        { to: "https://example.com", label: "Team", position: "left" },
         {
           href: "https://github.com/vorper-team/vorper",
           label: "GitHub",
@@ -111,21 +111,23 @@ const config: Config = {
           items: [
             {
               label: "Privacy Policy",
-              href: "/privacy",
+              href: "https://example.com",
             },
             {
               label: "Terms of Service",
-              href: "/terms",
+              href: "https://example.com",
             },
             {
               label: "Branding",
-              href: "/branding",
+              href: "https://example.com",
             },
           ],
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Vorper`,
     },
+
+    // FIX BROKEN LINKS, WORKAROUND IS EXAMPLE.COM
 
     prism: {
       theme: prismThemes.jettwaveLight,
