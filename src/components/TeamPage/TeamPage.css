@@ -53,13 +53,13 @@
   background: var(--card-background-light);
   border-radius: 3rem;
   box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem; 
+  padding: 1.5rem;
   text-align: left;
   max-width: 20rem;
 }
 
 .team-icon {
-  width: 4rem; 
+  width: 4rem;
   height: 4rem;
   border-radius: 50%;
   margin-bottom: 1rem;
@@ -78,7 +78,7 @@
 }
 
 .team-about {
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
   color: var(--text-light);
 }
 
