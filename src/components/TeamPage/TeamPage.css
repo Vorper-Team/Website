@@ -51,22 +51,22 @@
 
 .team-card {
   background: var(--card-background-light);
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  border-radius: 3rem;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem; 
   text-align: left;
   max-width: 20rem;
 }
 
 .team-icon {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem; 
+  height: 4rem;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
 .team-member-name {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin: 0.5rem 0;
   color: var(--text-light);
@@ -78,7 +78,7 @@
 }
 
 .team-about {
-  font-size: 1.2rem;
+  font-size: 1.1rem; 
   color: var(--text-light);
 }
 
