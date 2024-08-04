@@ -1,27 +1,58 @@
 ---
-slug: /vorper-release
-title: Announcing Vorper
+slug: /official/vorper-release
+title: Releasing Vorper
 authors:
   - ph7ntom
   - norlion
-tags: [Development]
+tags: [Official, Development]
 description: We've just released Vorper's brand new homepage and it's looking great!
 hide_table_of_contents: false
 keywords: [web development, vorper homepage, first blog]
+image: https://cdn.discordapp.com/attachments/1208761917154271265/1269626502295715852/8H88ExA.png?ex=66b0bf52&is=66af6dd2&hm=c3632122d0fe43f9687f988ea702c21dddc24cc8e86a8de2ff4c54b977df3a76&
 ---
 
-We've just finished building Vorper's official homepage and it's looking great, however we still have a lot to tell about how the journey went.
+We've just released Vorper's official site and it's looking AWESOME! But that's not it, we have a lot to tell you in this article, so go ahead and click on read more for well, more information.
 
-<!-- truncate -->
+![Vorper Card](https://cdn.discordapp.com/attachments/1208761917154271265/1269626502295715852/8H88ExA.png?ex=66b0bf52&is=66af6dd2&hm=c3632122d0fe43f9687f988ea702c21dddc24cc8e86a8de2ff4c54b977df3a76&)
 
-## Starting Off
+<!--truncate-->
 
-:::danger
-This blog is still undergoing development. Please remain patient for the time being.
-:::
+## Highlights
 
-Starting off, we used Docusaurus as a base for everything we needed, wonder why we picked Docusaurus instead of building our own from scratch, well there's something called "time" and we don't have much of it. Instead of wasting time building an entire site by ourselves, we just let Docusaurus do the heavy work.
+### Integrating with GitHub
 
-## Integrating with GitHub
+After setting up our repository and adding some initial content, we wanted to make our deployment process much easier.
 
-Once we had finished setting up our repository for the site and added some articles and blogs, we decided we wanted to make the deployment process 10x easier by automating deployment. How did we do this you may ask, well there's a thing called GitHub actions and it's pretty neat, it lets us setup a script on what to do when there is a commit. What we did was make it so that whenever there is a commit, it will automatically build the website's files and deploy to github pages, Woohoo! for ease of use.
+Then we stumbled upon **GitHub Actions**, a powerful automation tool that simplified our workflow. By configuring a deployment YML to run on every commit, we automated the build and deployment of our site to GitHub Pages, making our deployment process streamlined.
+
+Woohoo! We didn't have to type `yarn deploy` everytime we wanted to deploy anymore. Here's a sneek peek of our deployment YAML, you can review the full thing at our GitHub repository.
+
+```yml title=".github/deploy.yml"
+deploy:
+  name: Deploy to GitHub Pages
+  needs: build
+
+  # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+  permissions:
+    pages: write # to deploy to Pages
+    id-token: write # to verify the deployment originates from an appropriate source
+
+  # Deploy to the github-pages environment
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+```
+
+### Styling and Functionality
+
+With most of the `docusaurus.config.ts` being ready for deployment, we moved on to styling and add features to the site, and the first thing we had to do was setup Google Analytics and make dark mode, actually dark mode, by making it pure black.
+
+Next up, we wrote an in-general [Terms of Service](/terms) that we would apply to the site, after that we wrote the privacy policy and a bunch of other stuff that was gonna be important for legal purposes. Once we were done with writing basic documents we moved on to deploying the site, and finally, writing this blog.
+
+### Future Plans
+
+Looking forward, we plan to explore more advanced features of Docusaurus (such as translation stuffs) and make the site look even better!
+
+## Conclusion
+
+Thanks to Docusaurus and a bunch of other stuff, we were able to make this site possible, see ya next time fellas.

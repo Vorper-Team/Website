@@ -65,6 +65,9 @@ const config: Config = {
           editUrl: "https://github.com/Vorper-Team/Vorper/tree/main/",
         },
         blog: {
+          blogTitle: "Blogs",
+          blogDescription:
+            "News about Vorper, Jokes and so much more, all of that, in one blog page.",
           showReadingTime: true,
           editUrl: "https://github.com/Vorper-Team/Vorper/tree/main/",
         },
@@ -138,11 +141,11 @@ const config: Config = {
           items: [
             {
               label: "Privacy Policy",
-              href: "https://example.com",
+              href: "/privacy",
             },
             {
               label: "Terms of Service",
-              href: "https://example.com",
+              href: "/terms",
             },
             {
               label: "Branding",

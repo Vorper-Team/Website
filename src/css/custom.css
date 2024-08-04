@@ -3,17 +3,18 @@
 :root {
   --ifm-font-size-base: 1.2rem;
   --ifm-font-family-base: "Inter", sans-serif;
-  --ifm-color-primary: #00609c;
+  --ifm-color-primary: #4b6abf;
   --ifm-color-primary-dark: #4180b4;
   --ifm-color-primary-darker: #005983;
   --ifm-color-primary-darkest: #124981;
-  --ifm-color-primary-light: #3b6aba;
+  --ifm-color-primary-light: #4c75bd;
   --ifm-color-primary-lighter: #4f7aca;
   --ifm-color-primary-lightest: #5db3c4;
   --ifm-background-color: var(--ifm-color-gray-0);
   --ifm-navbar-background-color: var(--ifm-background-color);
-  --ifm-footer-background-color: rgb(226, 226, 226);
+  --ifm-footer-background-color: rgb(223, 228, 228);
   --ifm-pre-padding: 1.5rem;
+  --ifm-code-font-size: 0.9rem;
 }
 
 @supports not (font-variation-settings: normal) {
@@ -23,7 +24,7 @@
 }
 
 html[data-theme="dark"] {
-  --ifm-color-primary: #7ccbff;
+  --ifm-color-primary: #86a4ff;
   --ifm-background-color: black;
   --ifm-footer-background-color: rgb(29, 29, 29);
 }
@@ -54,22 +55,21 @@ html[data-theme="dark"] {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 
-h2,
-h3 {
-  font-size: 2rem;
+h2 {
+  font-size: 1.8rem;
   font-weight: 800;
+}
+
+h3 {
+  font-size: 1.4rem;
 }
 
 .pagination-nav__label {
   font-size: 0.8rem;
-}
-
-li {
-  font-size: 1.05rem;
 }
 
 @media (min-width: 1024px) {
@@ -87,28 +87,31 @@ li {
   }
 
   .pagination-nav__label {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+    font-weight: 800;
+  }
+
+  h3 {
+    font-size: 1.9rem;
+    font-weight: 800;
   }
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgb(101, 158, 173);
-  border-radius: 10px;
-  border: 3.35px solid transparent;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 10px;
-}
-
 .table-of-contents__link {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+}
+
+.markdown > h2 {
+  margin-top: 0px;
 }
 
 /* CSS Code is extremely redundant and needs a refactoring. I need some serious assistance - PH7NTOM */
