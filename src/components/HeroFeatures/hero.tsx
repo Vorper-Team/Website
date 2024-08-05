@@ -12,7 +12,7 @@ export default function Hero(): JSX.Element {
         The Devs.
       </Heading>
       <p className="hero-description">
-        We're a team of developers focused on making open source better, faster,
+        We're a team of developers with a unified goal of making open source better, faster,
         and more usable.
       </p>
       <div className="button-container">
