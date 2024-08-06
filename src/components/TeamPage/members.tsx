@@ -22,7 +22,7 @@ const teamMembers = [
   },
   {
     name: "Nym1",
-    role: "Translator",
+    role: "Helper",
     about:
       "I'm Nym1, a teenager from Germany! In my free time you'll find me playing Microsoft Flight Simulator or coding things",
     icon: "https://github.com/nymone.png",
