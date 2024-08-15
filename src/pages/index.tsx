@@ -6,7 +6,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title="Homepage"
-      description="We are a team of developers from all around the world with an objective to make free and open source software better."
+      description="Vorper is a team of developers from all around the world with a unified goal of making FOSS better."
     >
       <Hero />
       <HomepageFeatures />
